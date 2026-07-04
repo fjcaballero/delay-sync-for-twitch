@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Delay Sync for Twitch",
+  "version": "1.0.0",
+  "description": "Delay Twitch video and audio by X seconds to sync with another source (TV, radio, PPV). Runs 100% locally in your browser.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.twitch.tv/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Delay Sync for Twitch",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

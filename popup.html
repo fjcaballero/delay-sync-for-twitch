@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: sans-serif; width: 220px; padding: 12px; }
+    input[type=number] { width: 60px; }
+    button { margin-top: 8px; width: 100%; padding: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <label>Retraso (segundos):</label><br>
+  <input type="number" id="seconds" value="5" min="0" max="30" step="1"><br>
+  <button id="start">Iniciar retraso</button>
+  <button id="stop">Detener</button>
+  <script src="popup.js"></script>
+</body>
+</html>
